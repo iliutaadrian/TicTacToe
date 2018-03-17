@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0"
+          prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="controller.Controller">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="116.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="118.0"/>
+        <ColumnConstraints halignment="CENTER" maxWidth="116.0" minWidth="106.0" prefWidth="116.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="77.0" minHeight="4.0" prefHeight="51.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="162.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="147.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <Button fx:id="b1" mnemonicParsing="false" onAction="#click_b1" prefHeight="75.0" prefWidth="100.0"
+            GridPane.rowIndex="1"/>
+    <Button fx:id="b2" mnemonicParsing="false" onAction="#click_b2" prefHeight="75.0" prefWidth="100.0"
+            GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button fx:id="b3" mnemonicParsing="false" onAction="#click_b3" prefHeight="75.0" prefWidth="100.0"
+            GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+    <Button fx:id="b4" mnemonicParsing="false" onAction="#click_b4" prefHeight="75.0" prefWidth="100.0"
+            GridPane.rowIndex="2"/>
+    <Button fx:id="b5" mnemonicParsing="false" onAction="#click_b5" prefHeight="75.0" prefWidth="100.0"
+            GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button fx:id="b6" mnemonicParsing="false" onAction="#click_b6" prefHeight="75.0" prefWidth="100.0"
+            GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+    <Button fx:id="b7" mnemonicParsing="false" onAction="#click_b7" prefHeight="75.0" prefWidth="100.0"
+            GridPane.rowIndex="3"/>
+    <Button fx:id="b8" mnemonicParsing="false" onAction="#click_b8" prefHeight="75.0" prefWidth="100.0"
+            GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button fx:id="b9" mnemonicParsing="false" onAction="#click_b9" prefHeight="75.0" prefWidth="100.0"
+            GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+
+    <Label fx:id="ScorX" alignment="CENTER" contentDisplay="CENTER" text="Scor X" GridPane.halignment="CENTER"
+           GridPane.valignment="CENTER"/>
+    <Label fx:id="ScorO" alignment="CENTER" contentDisplay="CENTER" text="Scor O" GridPane.columnIndex="2"/>
+    <Label alignment="CENTER" contentDisplay="CENTER" text="XO" GridPane.columnIndex="1"/>
+</GridPane>
